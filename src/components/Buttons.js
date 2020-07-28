@@ -14,19 +14,19 @@ export default class Buttons extends Component {
         return (
             <div className='center'>
 
-                <Button variant='primary' className='btn-spacing' onClick={this.props.playButton}>
+                <Button variant='success' className='btn-spacing' onClick={this.props.playButton}>
                     Play
                 </Button>
-                <Button variant='primary' className='btn-spacing' onClick={this.props.pauseButton}>
+                <Button variant='warning' className='btn-spacing' onClick={this.props.pauseButton}>
                     Pause
                     </Button>
-                <Button variant='primary' className='btn-spacing' onClick={this.props.clear}>
+                <Button variant='danger' className='btn-spacing' onClick={this.props.clear}>
                     Clear
                     </Button>
-                <Button variant='primary' className='btn-spacing' onClick={this.props.slow}>
+                <Button variant='light' className='btn-spacing' onClick={this.props.slow}>
                     Slow
                     </Button>
-                <Button variant='primary' className='btn-spacing' onClick={this.props.fast}>
+                <Button variant='info' className='btn-spacing' onClick={this.props.fast}>
                     Fast
                     </Button>
                 <Button variant='primary' className='btn-spacing' onClick={this.props.seed}>

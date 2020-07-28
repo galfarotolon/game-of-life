@@ -3,6 +3,7 @@ import React, { Component } from 'react'
 import Grid from './Grid.js'
 import Buttons from './Buttons.js'
 
+
 export default class Main extends Component {
     constructor() {
         super();
@@ -35,7 +36,8 @@ export default class Main extends Component {
         let gridCopy = arrayClone(this.state.gridFull);
         for (let i = 0; i < this.rows; i++) {
             for (let j = 0; j < this.cols; j++) {
-                if (Math.floor(Math.random() * 4) === 1) {
+                // the higher it is multiplied by, the lower the amount of boxes seeded
+                if (Math.floor(Math.random() * 10) === 1) {
                     gridCopy[i][j] = true;
 
                 }
@@ -61,7 +63,7 @@ export default class Main extends Component {
     }
 
     slow = () => {
-        this.speed = 1000;
+        this.speed = 500;
         this.playButton();
     }
 
@@ -77,6 +79,18 @@ export default class Main extends Component {
             generation: 0
         })
     }
+
+    handelSetNode = node => {
+        let newGrid = this.state.nodeGrid;
+
+        newGrid[node.x][node.y].active = !node.active;
+
+        this.setState({
+            nodeGrid: newGrid
+        });
+    };
+
+
 
     gridSize = (size) => {
         switch (size) {
@@ -171,17 +185,10 @@ export default class Main extends Component {
                     rows={this.rows}
                     cols={this.cols}
                     selectBox={this.selectBox}
-
-
-
-
                 />
 
-
-
-
-
                 <h2>Generations: {this.state.generation}</h2>
+
             </div>
         )
     }
