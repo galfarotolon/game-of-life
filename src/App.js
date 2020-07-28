@@ -5,6 +5,7 @@ import './App.css';
 import Main from './components/Main'
 import Rules from './components/Rules'
 import Info from './components/Info'
+import Footer from './components/Footer'
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Main />
       <Rules />
       <Info />
+      <Footer />
     </div>
   );
 }

@@ -96,6 +96,11 @@ h4 {
   
 }
 
+p {
+  color: grey;
+  font-size: 0.9rem;
+}
+
 ul{
   list-style: none;
   margin: 2% 0;
@@ -112,4 +117,12 @@ li{
 .btn-spacing{
   margin-left: 1%;
   background-color: grey;
+}
+
+
+
+/* FOOTER */
+
+.footer{
+  margin: 3%;
 }
