@@ -71,6 +71,7 @@ export default class Buttons extends Component {
                     title='Grid Size'
                     id='size-menu'
                     variant='light'
+                    onSelect={this.handleSelect}
 
                 >
                     <Dropdown.Item eventKey='1'>25x25</Dropdown.Item>
