@@ -14,6 +14,8 @@ function Rules() {
                 <li>Press the Patterns button to choose between a randomly generated pattern or some well-known preset patterns.</li>
                 <li>Press the Speed Options button to change the speed at which Generations are created.</li>
                 <li>Press the Grid Size button to choose between several grid sizes.</li>
+                <li><strong><em>You can create new live cells by clicking the squares at any given time. Best to
+                create new cells when the generations are paused.</em></strong></li>
             </ul>
             <h4> Rules for playing Conway's Game of Life: </h4>
             <ul>

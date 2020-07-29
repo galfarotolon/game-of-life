@@ -4,6 +4,16 @@
 - Will use react to bootstrap my application 
 - Class Components to handle state
 - Functional Components for components that don't need state management
+- This project uses minimal dependencies. All the react dependencies that come by default, and react-bootstrap to style the application.
+
+
+## How to use the game
+
+- fork and clone the repo to your desired directory
+- Once cloned, make sure to cd into 'game-of-life' directory
+- run the 'npm i' command in the terminal to install all the dependencies used in the project
+- Once installed, run npm start in the terminal to initialize the application
+- The game is now operational. Have fun!
 
 ## Structure
 
@@ -13,11 +23,8 @@
 - Box.js contains individual box or square state, such as dead or true, and neighbor awareness
 - Buttons.js handles the display and visualization of the buttons
 - Rules.js is a functional component that only explains game rules and controls
-- Info.js explains what cellular automata are and describes how they are useful in real life, also explains the 'Turing Completeness' of the game.
-- Also explains how the  game uses 'double buffering' to implement the game and why it is useful in this situation
+- Info.js briefly talks about the Author of the  game, and explains what cellular automata are. This section also describes the term 'Turing Completeness', and the term 'double buffering' and why it is useful in this situation.
 - Footer.js contains a small footer for the app to make it look more complete and professional
-
-
 
 
 

@@ -70,6 +70,7 @@ export default class Buttons extends Component {
                     className='btn-spacing'
                     title='Grid Size'
                     id='size-menu'
+                    variant='light'
 
                 >
                     <Dropdown.Item eventKey='1'>25x25</Dropdown.Item>
