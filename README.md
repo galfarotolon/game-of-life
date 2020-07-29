@@ -21,14 +21,10 @@
 
 
 
+## Ways to improve the game:
 
+- Make it so the preset patterns always appear in the center of the grid(depending on grid size)
+- Make a wrapper so alive cells keep going through the other side
+- Make generations stop once all cells die
 
-
-Student should be able to explain what cellular automata are and describe how they are useful in real life:
-
-Student should be able to correctly analyze the ‘Turing Completeness’ of Conway’s “Game of Life”:
-
-Student should be able to utilize "double buffering" to implement the game
-
-The Game of Life is a cellular automaton devised by the British mathematician John Horton Conway in 1970. It is the best-known example of a cellular automaton.
 

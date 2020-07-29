@@ -8,10 +8,12 @@ function Rules() {
             <h4>Controls: </h4>
             <ul>
                 <li>Press the Play button to start the sequence</li>
-                <li>Press the Slow or Fast Buttons to change the speed at which Generations are created</li>
                 <li>Press the Pause button to stop the current sequence in the Grid</li>
-                <li>Press the Clear button to clear the current Grid Sequence and Generations</li>
-                <li>Press the Seed button to populate the grid</li>
+                <li>Press the Clear button to clear the current Grid Sequence and Generations.</li>
+                <li>Press the Step by Step button to increment generations by one at a time.</li>
+                <li>Press the Patterns button to choose between a randomly generated pattern or some well-known preset patterns.</li>
+                <li>Press the Speed Options button to change the speed at which Generations are created.</li>
+                <li>Press the Grid Size button to choose between several grid sizes.</li>
             </ul>
             <h4> Rules for playing Conway's Game of Life: </h4>
             <ul>

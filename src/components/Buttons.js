@@ -42,13 +42,9 @@ export default class Buttons extends Component {
                 <DropdownButton
                     className='btn-spacing'
                     title='Patterns'
-                    id='speed-menu'
+                    id='pattern-menu'
                     variant='light'
-
                 >
-
-
-
                     <Dropdown.Item onClick={this.props.seed}>Randomly Seed</Dropdown.Item>
                     <Dropdown.Item onClick={this.props.glider}> Glider </Dropdown.Item>
                     <Dropdown.Item onClick={this.props.dieHard}>Die Hard</Dropdown.Item>
@@ -56,26 +52,24 @@ export default class Buttons extends Component {
                     <Dropdown.Item onClick={this.props.gliderGun}>Glider Gun</Dropdown.Item>
                 </DropdownButton>
 
+
+
                 <DropdownButton
                     className='btn-spacing'
                     title='Speed Options'
                     id='speed-menu'
                     variant='light'
-
                 >
-
-
-
                     <Dropdown.Item onClick={this.props.slow}>Slow</Dropdown.Item>
                     <Dropdown.Item onClick={this.props.medium}> Medium </Dropdown.Item>
                     <Dropdown.Item onClick={this.props.fast}>Fast</Dropdown.Item>
                 </DropdownButton>
-                <DropdownButton
 
+
+                <DropdownButton
                     className='btn-spacing'
                     title='Grid Size'
                     id='size-menu'
-                    onSelect={this.handleSelect}
 
                 >
                     <Dropdown.Item eventKey='1'>25x25</Dropdown.Item>
