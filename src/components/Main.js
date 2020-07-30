@@ -87,6 +87,8 @@ export default class Main extends Component {
     }
 
 
+    //grid size 3 options for dropdown 
+
     gridSize = (size) => {
         switch (size) {
             case '1':
@@ -350,7 +352,7 @@ export default class Main extends Component {
 
 
 
-
+    // seeds and plays on first render
     componentDidMount() {
         this.seed();
         this.playButton();

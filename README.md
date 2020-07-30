@@ -15,6 +15,8 @@
 - Once installed, run npm start in the terminal to initialize the application
 - The game is now operational. Have fun!
 
+- Deployed version here --> https://game-of-life-steel.vercel.app/
+
 ## Structure
 
 - All the app is rendered in App.js
