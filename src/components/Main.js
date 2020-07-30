@@ -9,7 +9,7 @@ export default class Main extends Component {
     constructor() {
         super();
         this.speed = 100;
-        this.rows = 50;
+        this.rows = 30;
         this.cols = 50;
 
         this.state = {
@@ -86,31 +86,20 @@ export default class Main extends Component {
         })
     }
 
-    handelSetNode = node => {
-        let newGrid = this.state.nodeGrid;
-
-        newGrid[node.x][node.y].active = !node.active;
-
-        this.setState({
-            nodeGrid: newGrid
-        });
-    };
-
-
 
     gridSize = (size) => {
         switch (size) {
             case '1':
-                this.cols = 25;
-                this.rows = 25;
+                this.cols = 30;
+                this.rows = 20;
                 break;
             case '2':
                 this.cols = 50;
-                this.rows = 50;
+                this.rows = 30;
                 break;
             default:
-                this.cols = 75;
-                this.rows = 75;
+                this.cols = 70;
+                this.rows = 50;
 
         }
         this.clear();
@@ -230,13 +219,13 @@ export default class Main extends Component {
 
     dieHard = () => {
         let gridCopy = arrayClone(this.state.gridFull);
-        gridCopy[17][16] = true;
-        gridCopy[18][10] = true;
-        gridCopy[18][11] = true;
-        gridCopy[19][11] = true;
-        gridCopy[19][15] = true;
-        gridCopy[19][16] = true;
-        gridCopy[19][17] = true;
+        gridCopy[7][26] = true;
+        gridCopy[8][20] = true;
+        gridCopy[8][21] = true;
+        gridCopy[9][21] = true;
+        gridCopy[9][25] = true;
+        gridCopy[9][26] = true;
+        gridCopy[9][27] = true;
 
         this.setState({
             gridFull: gridCopy
@@ -246,63 +235,64 @@ export default class Main extends Component {
 
     pulsar = () => {
         let gridCopy = arrayClone(this.state.gridFull);
-        gridCopy[2][4] = true;
-        gridCopy[2][5] = true;
-        gridCopy[2][6] = true;
-        gridCopy[2][10] = true;
-        gridCopy[2][11] = true;
-        gridCopy[2][12] = true;
 
-        gridCopy[4][2] = true;
-        gridCopy[4][7] = true;
-        gridCopy[4][9] = true;
-        gridCopy[4][14] = true;
+        gridCopy[2][19] = true;
+        gridCopy[2][20] = true;
+        gridCopy[2][21] = true;
+        gridCopy[2][25] = true;
+        gridCopy[2][26] = true;
+        gridCopy[2][27] = true;
 
-        gridCopy[5][2] = true;
-        gridCopy[5][7] = true;
-        gridCopy[5][9] = true;
-        gridCopy[5][14] = true;
+        gridCopy[4][17] = true;
+        gridCopy[4][22] = true;
+        gridCopy[4][24] = true;
+        gridCopy[4][29] = true;
 
-        gridCopy[6][2] = true;
-        gridCopy[6][7] = true;
-        gridCopy[6][9] = true;
-        gridCopy[6][14] = true;
+        gridCopy[5][17] = true;
+        gridCopy[5][22] = true;
+        gridCopy[5][24] = true;
+        gridCopy[5][29] = true;
 
-        gridCopy[7][4] = true;
-        gridCopy[7][5] = true;
-        gridCopy[7][6] = true;
-        gridCopy[7][10] = true;
-        gridCopy[7][11] = true;
-        gridCopy[7][12] = true;
+        gridCopy[6][17] = true;
+        gridCopy[6][22] = true;
+        gridCopy[6][24] = true;
+        gridCopy[6][29] = true;
 
-        gridCopy[9][4] = true;
-        gridCopy[9][5] = true;
-        gridCopy[9][6] = true;
-        gridCopy[9][10] = true;
-        gridCopy[9][11] = true;
-        gridCopy[9][12] = true;
+        gridCopy[7][19] = true;
+        gridCopy[7][20] = true;
+        gridCopy[7][21] = true;
+        gridCopy[7][25] = true;
+        gridCopy[7][26] = true;
+        gridCopy[7][27] = true;
 
-        gridCopy[10][2] = true;
-        gridCopy[10][7] = true;
-        gridCopy[10][9] = true;
-        gridCopy[10][14] = true;
+        gridCopy[9][19] = true;
+        gridCopy[9][20] = true;
+        gridCopy[9][21] = true;
+        gridCopy[9][25] = true;
+        gridCopy[9][26] = true;
+        gridCopy[9][27] = true;
 
-        gridCopy[11][2] = true;
-        gridCopy[11][7] = true;
-        gridCopy[11][9] = true;
-        gridCopy[11][14] = true;
+        gridCopy[10][17] = true;
+        gridCopy[10][22] = true;
+        gridCopy[10][24] = true;
+        gridCopy[10][29] = true;
 
-        gridCopy[12][2] = true;
-        gridCopy[12][7] = true;
-        gridCopy[12][9] = true;
-        gridCopy[12][14] = true;
+        gridCopy[11][17] = true;
+        gridCopy[11][22] = true;
+        gridCopy[11][24] = true;
+        gridCopy[11][29] = true;
 
-        gridCopy[14][4] = true;
-        gridCopy[14][5] = true;
-        gridCopy[14][6] = true;
-        gridCopy[14][10] = true;
-        gridCopy[14][11] = true;
-        gridCopy[14][12] = true;
+        gridCopy[12][17] = true;
+        gridCopy[12][22] = true;
+        gridCopy[12][24] = true;
+        gridCopy[12][29] = true;
+
+        gridCopy[14][19] = true;
+        gridCopy[14][20] = true;
+        gridCopy[14][21] = true;
+        gridCopy[14][25] = true;
+        gridCopy[14][26] = true;
+        gridCopy[14][27] = true;
 
         this.setState({
             gridFull: gridCopy

@@ -6,9 +6,6 @@ import '../App.css'
 
 
 
-
-
-
 export default class Buttons extends Component {
 
 
@@ -23,7 +20,7 @@ export default class Buttons extends Component {
         return (
             <div className='center'>
 
-                <Button variant='success' className='btn-spacing' onClick={this.props.playButton}>
+                <Button variant='success' className='btn-spacing btn-success' onClick={this.props.playButton}>
                     Play
                 </Button>
                 <Button variant='warning' className='btn-spacing' onClick={this.props.pauseButton}>
@@ -45,7 +42,7 @@ export default class Buttons extends Component {
                     id='pattern-menu'
                     variant='light'
                 >
-                    <Dropdown.Item onClick={this.props.seed}>Randomly Seed</Dropdown.Item>
+                    <Dropdown.Item onClick={this.props.seed}>Seed Randomly</Dropdown.Item>
                     <Dropdown.Item onClick={this.props.glider}> Glider </Dropdown.Item>
                     <Dropdown.Item onClick={this.props.dieHard}>Die Hard</Dropdown.Item>
                     <Dropdown.Item onClick={this.props.pulsar}>Pulsar</Dropdown.Item>
@@ -74,9 +71,9 @@ export default class Buttons extends Component {
                     onSelect={this.handleSelect}
 
                 >
-                    <Dropdown.Item eventKey='1'>25x25</Dropdown.Item>
-                    <Dropdown.Item eventKey='2'>50x50</Dropdown.Item>
-                    <Dropdown.Item eventKey='3'>75x75</Dropdown.Item>
+                    <Dropdown.Item eventKey='1'>30x20</Dropdown.Item>
+                    <Dropdown.Item eventKey='2'>50x30</Dropdown.Item>
+                    <Dropdown.Item eventKey='3'>70x50</Dropdown.Item>
                 </DropdownButton>
 
 
